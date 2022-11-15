@@ -1,0 +1,165 @@
+@import 'config/mixins';
+@import 'config/vars';
+
+body {
+    background: $whiteColor;
+    color: $blackColor;
+
+    .alyamkina {
+        height: 100%;
+
+        &__container {
+            height: inherit;
+
+            .row {
+                height: inherit;
+            }
+        }
+
+        &__title {
+            @include rezaZulmiFont(48px);
+            color: $blackColor;
+
+            @media (max-width: 360px) {
+                font-size: 24px;
+            }
+
+            @media (min-width: 361px) and (max-width: 768px) {
+                font-size: 32px;
+            }
+        }
+
+        &__text {
+            @include bookmanOldStyleFont(24px);
+            color: $blackColor;
+            animation-delay: 3s;
+
+            @media (max-width: 360px) {
+                font-size: 14px;
+            }
+
+            @media (min-width: 361px) and (max-width: 768px) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .bg-2 {
+        background: $alyamkinaBgLinearColor1;
+
+        &__title {
+            @include rezaZulmiFont(48px);
+            color: $blackColor;
+
+            @media (max-width: 360px) {
+                font-size: 24px;
+            }
+
+            @media (min-width: 361px) and (max-width: 768px) {
+                font-size: 32px;
+            }
+        }
+
+        &__text {
+            @include bookmanOldStyleFont(24px);
+            animation-delay: 1s;
+
+            @media (max-width: 992px) {
+                font-size: 20px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+
+        &__subtext {
+            @include bookmanOldStyleFont(20px);
+            color: $lightColor;
+            animation-delay: 1.5s;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+
+        &__div {
+            color: $blackColor;
+            opacity: 1;
+        }
+    }
+
+    .books {
+        &__title {
+            @include rezaZulmiFont(48px);
+            color: $blackColor;
+            text-align: center;
+
+            @media (max-width: 360px) {
+                font-size: 24px;
+            }
+
+            @media (min-width: 361px) and (max-width: 768px) {
+                font-size: 32px;
+            }
+        }
+
+        .delay {
+            &-500 {
+                animation-delay: 500ms;
+            }
+
+            &-1000 {
+                animation-delay: 1000ms;
+            }
+        }
+
+        .card {
+            height: 410px;
+            border: 1px solid $blackColor;
+            border-radius: 0;
+
+            &-title {
+                @include bookmanOldStyleFont(24px);
+                color: $blackColor;
+                text-align: center;
+
+                @media (max-width: 360px) {
+                    font-size: 14px;
+                }
+
+                @media (min-width: 361px) and (max-width: 768px) {
+                    font-size: 20px;
+                }
+            }
+
+            &__div {
+                outline: 1px solid $blackColor;
+            }
+
+            a {
+                color: $alyamkinaBgLinearColor1;
+            }
+
+            &__btn {
+                @include bookmanOldStyleFont(20px);
+                border: 1px solid $blackColor;
+                border-radius: 0;
+
+                @media (max-width: 360px) {
+                    font-size: 14px;
+                }
+
+                @media (min-width: 361px) and (max-width: 768px) {
+                    font-size: 18px;
+                }
+
+                &:hover {
+                    background-color: $blackColor;
+                    color: $whiteColor;
+                    transition-duration: 300ms;
+                }
+            }
+        }
+    }
+}

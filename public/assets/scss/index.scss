@@ -1,0 +1,480 @@
+@import 'config/mixins';
+@import 'config/vars';
+@import 'vdovin';
+@import 'gailevich';
+
+body {
+    background: url("main/jpg-png/background.jpg") no-repeat;
+    background-color: $indexBgLinearColor;
+    background-size: contain;
+
+    .background-heading {
+        @include bewareFont(250px);
+        color: $whiteColor;
+        height: min-content;
+        z-index: 2;
+
+        @media (min-width:360px) and (max-width:575px) {
+            font-size: 36px;
+        }
+
+        @media (min-width:576px) and (max-width:767px) {
+            font-size: 58px;
+        }
+
+        @media (min-width:768px) and (max-width:991px) {
+            font-size: 82px;
+        }
+
+        @media (min-width:992px) and (max-width:1199px) {
+            font-size: 116px;
+        }
+
+        @media (min-width:1200px) and (max-width:1399px) {
+            font-size: 132px;
+        }
+
+        @media (min-width:1400px) and (max-width:2560px) {
+            font-size: 164px;
+        }
+    }
+
+    .semi-transparent-heading {
+        z-index: 1;
+        color: $bgHeadingColor !important;
+        opacity: 75%;
+    }
+
+    .modal-body {
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+
+    .card-container {
+        .inner-container {
+            padding: 0;
+            background: $indexContainerBgColor;
+            box-shadow: 15px 15px 15px rgba(171, 134, 77, 0.3);
+        }
+
+        .divider {
+            margin: -10% 0 -10% 0;
+        }
+
+        .start {
+            &__bg {
+                height: 860px;
+
+                background: url("main/svg/linked-Path-Group.svg") no-repeat;
+                background-size: contain;
+                background-position: left top;
+
+                @media (min-width:360px) and (max-width:575px) {
+                    background-size: 50%;
+                    height: 300px;
+                }
+
+                @media (min-width:576px) and (max-width:767px) {
+                    height: 400px;
+                }
+
+                @media (min-width:768px) and (max-width:991px) {
+                    height: 500px;
+                }
+
+                @media (min-width:992px) and (max-width:1199px) {
+                    height: 660px;
+                }
+
+                @media (min-width:1200px) and (max-width:1399px) {
+                    height: 760px;
+                }
+            }
+
+            h3 {
+                @include santaCatarinaFont(50px);
+                color: $indexBlackColor;
+
+                @media (min-width:360px) and (max-width:575px) {
+                    font-size: 20px;
+                }
+
+                @media (min-width:576px) and (max-width:767px) {
+                    font-size: 32px;
+                }
+
+                @media (min-width:768px) and (max-width:991px) {
+                    font-size: 36px;
+                }
+
+                @media (min-width:992px) and (max-width:1199px) {
+                    font-size: 38px;
+                }
+
+                @media (min-width:1200px) and (max-width:1399px) {
+                    font-size: 44px;
+                }
+            }
+
+            &__row {
+                padding-top: 28%;
+            }
+
+            p {
+                @include quicksandFont(40px);
+                color: $indexBlackColor;
+
+                @media (min-width:360px) and (max-width:575px) {
+                    font-size: 14px;
+                }
+
+                @media (min-width:576px) and (max-width:767px) {
+                    font-size: 20px;
+                }
+
+                @media (min-width:768px) and (max-width:991px) {
+                    font-size: 24px;
+                }
+
+                @media (min-width:992px) and (max-width:1199px) {
+                    font-size: 32px;
+                }
+
+                @media (min-width:1200px) and (max-width:1399px) {
+                    font-size: 36px;
+                }
+            }
+        }
+
+        .main-duks {
+            &__parent {
+                width: 100%;
+
+                @include santaCatarinaFont(75px);
+                color: $indexBlackColor;
+
+                @media (min-width:360px) and (max-width:575px) {
+                    font-size: 36px;
+                }
+
+                @media (min-width:576px) and (max-width:767px) {
+                    font-size: 46px;
+                }
+
+                @media (min-width:768px) and (max-width:991px) {
+                    font-size: 64px;
+                }
+
+                @media (min-width:992px) and (max-width:1199px) {
+                    font-size: 84px;
+                }
+
+                @media (min-width:1200px) and (max-width:1399px) {
+                    font-size: 96px;
+                }
+
+                .main-ducks__img {
+                    box-shadow: 10px 10px 4px rgba(128, 105, 92, 0.2);
+                }
+            }
+
+            &__title {
+                @include santaCatarinaFont(75px);
+                color: $indexBlackColor;
+
+                @media (min-width:360px) and (max-width:575px) {
+                    font-size: 40px;
+                }
+
+                @media (min-width:576px) and (max-width:767px) {
+                    font-size: 64px;
+                }
+
+                @media (min-width:768px) and (max-width:991px) {
+                    font-size: 96px;
+                }
+
+                @media (min-width:1200px) and (max-width:1399px) {
+                    font-size: 100px;
+                }
+
+                @media (max-width:1199px) {
+                    text-align: center;
+                }
+            }
+
+            &__text {
+                @include quicksandFont(40px);
+                color: $indexBlackColor;
+
+                @media (min-width:360px) and (max-width:575px) {
+                    font-size: 24px;
+                }
+
+                @media (min-width:576px) and (max-width:767px) {
+                    font-size: 28px;
+                }
+
+                @media (min-width:768px) and (max-width:991px) {
+                    font-size: 32px;
+                }
+
+                @media (min-width:1200px) and (max-width:1399px) {
+                    font-size: 36px;
+                }
+
+                @media(max-width:1199px) {
+                    text-align: center;
+                }
+            }
+        }
+
+        .gallery-students-1 {
+            padding-top: 22rem;
+
+            background: url("main/svg/ytyata.svg") no-repeat;
+            background-size: 20%;
+
+            @media (min-width:360px) and (max-width:575px) {
+                padding-top: 5rem;
+            }
+
+            @media (min-width:576px) and (max-width:767px) {
+                padding-top: 8.5rem;
+            }
+
+            @media (min-width:768px) and (max-width:991px) {
+                padding-top: 11rem;
+            }
+
+            @media (min-width:992px) and (max-width:1199px) {
+                padding-top: 15rem;
+            }
+
+            @media (min-width:1200px) and (max-width:1399px) {
+                padding-top: 18rem;
+            }
+
+            @media (max-width:991px) {
+                background-position: top center;
+            }
+
+            @media (min-width:992px) {
+                background-position: top left 20px;
+            }
+        }
+
+        .gallery-students-2 {
+            display: grid;
+            grid-template-columns: 1.5fr 1.1fr 0.4fr 1fr;
+            grid-template-rows: 10fr 2.7fr 12.5fr 1.7fr 10.7fr 2.6fr 9.5fr;
+            gap: 2em 2em;
+            grid-template-areas:
+                "photo1 photo2 photo3 photo3"
+                "photo1 photo5 photo3 photo3"
+                "photo4 photo5 photo6 photo6"
+                "photo4 photo8 photo8 photo9"
+                "photo7 photo8 photo8 photo9"
+                "photo7 photo11 photo11 photo12"
+                "photo10 photo11 photo11 photo12";
+            width: 90%;
+
+            @media (min-width:992px) and (max-width:1199px) {
+                width: 100%;
+            }
+
+            max-height: 1500px;
+
+            .photo1 {
+                grid-area: photo1;
+            }
+
+            .photo2 {
+                grid-area: photo2;
+            }
+
+            .photo3 {
+                grid-area: photo3;
+            }
+
+            .photo4 {
+                grid-area: photo4;
+            }
+
+            .photo5 {
+                grid-area: photo5;
+            }
+
+            .photo6 {
+                grid-area: photo6;
+            }
+
+            .photo7 {
+                grid-area: photo7;
+            }
+
+            .photo8 {
+                grid-area: photo8;
+            }
+
+            .photo9 {
+                grid-area: photo9;
+            }
+
+            .photo10 {
+                grid-area: photo10;
+            }
+
+            .photo11 {
+                grid-area: photo11;
+            }
+
+            .photo12 {
+                grid-area: photo12;
+            }
+
+            .photo-img {
+                object-fit: cover;
+            }
+
+            .height-width-100 {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .mobile-gallery-students {
+            &__img {
+                object-fit: contain;
+            }
+        }
+
+        .students-grid-2 {
+            background-color: #494135;
+
+            .bordered {
+                border-left: 4px solid $whiteColor;
+                border-right: 4px solid $whiteColor;
+            }
+
+            /*@media (min-width:768px) and (max-width:991px) {
+                outline: 3px solid $whiteColor;
+                outline-offset: -1rem;
+            }
+
+
+            @media (min-width:1200px) {
+                outline: 3px solid $whiteColor;
+                outline-offset: -1rem;
+            }*/
+        }
+
+        .creators {
+            margin-top: 10rem;
+
+            &__title {
+                text-align: center;
+                @include santaCatarinaFont(128px);
+                color: $indexBlackColor;
+
+                @media (min-width:360px) and (max-width:575px) {
+                    font-size: 46px;
+                }
+
+                @media (min-width:576px) and (max-width:767px) {
+                    font-size: 64px;
+                }
+
+                @media (min-width:768px) and (max-width:991px) {
+                    font-size: 96px;
+                }
+
+                @media (min-width:992px) and (max-width:1199px) {
+                    font-size: 100px;
+                }
+
+                @media (min-width:1200px) and (max-width:1399px) {
+                    font-size: 116px;
+                }
+            }
+
+            &__div {
+                margin-top: 150px;
+
+                @media (max-width:991px) {
+                    margin-top: 0;
+                }
+
+                width: 100%;
+            }
+
+            &__img-subtext {
+                &-1 {
+                    @include quicksandFont(36px);
+                    color: $indexBlackColor;
+                    top: 40%
+                }
+
+                &-2 {
+                    @include quicksandFont(28px);
+                    color: $indexBlackColor;
+                    top: 40%;
+                    left: 10%;
+                }
+            }
+
+            &__name {
+                @include santaCatarinaFont(96px);
+                color: $indexBlackColor;
+
+                @media (min-width:360px) and (max-width:575px) {
+                    font-size: 30px;
+                    margin: 0;
+                }
+
+                @media (min-width:576px) and (max-width:767px) {
+                    font-size: 42px;
+                    margin: 0;
+                }
+
+                @media (min-width:768px) and (max-width:991px) {
+                    font-size: 54px;
+                    margin: 0;
+                }
+
+                @media (min-width:992px) and (max-width:1199px) {
+                    font-size: 52px;
+                }
+
+                @media (min-width:1200px) and (max-width:1399px) {
+                    font-size: 64px;
+                }
+            }
+
+            &__description {
+                @include quicksandFont(36px);
+                color: $indexBlackColor;
+
+                @media (min-width:360px) and (max-width:575px) {
+                    font-size: 18px;
+                }
+
+                @media (min-width:576px) and (max-width:767px) {
+                    font-size: 24px;
+                }
+
+                @media (min-width:768px) and (max-width:991px) {
+                    font-size: 28px;
+                }
+
+                @media (min-width:992px) and (max-width:1199px) {
+                    font-size: 32px;
+                }
+
+                @media (min-width:1200px) and (max-width:1399px) {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}

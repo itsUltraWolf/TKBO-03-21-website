@@ -1,0 +1,78 @@
+@import 'config/mixins';
+@import 'config/vars';
+
+.gailevich {
+    &__header {
+        background: $gailevichBgLinearColor;
+    }
+
+    &__body {
+        background: $gailevichBgGradientColor;
+    }
+
+    &__text {
+        @include pobedaFont(128px);
+        line-height: 128px;
+        color: $gailevichTextColor;
+
+        @media (min-width:360px) and (max-width:575px) {
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        @media (min-width:576px) and (max-width:767px) {
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        @media (min-width:768px) and (max-width:991px) {
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+        @media (min-width:992px) and (max-width:1199px) {
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        @media (min-width:1200px) and (max-width:1399px) {
+            font-size: 46px;
+            line-height: 46px;
+        }
+    }
+
+    &__hr {
+        color: $blackColor;
+    }
+
+    &__img-subtext {
+        @include mr_ApexMk3Font(40px);
+        line-height: 40px;
+        color: $blackColor;
+
+        @media (min-width:360px) and (max-width:575px) {
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        @media (min-width:576px) and (max-width:767px) {
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        @media (min-width:768px) and (max-width:991px) {
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+        @media (min-width:992px) and (max-width:1199px) {
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        @media (min-width:1200px) and (max-width:1399px) {
+            font-size: 36px;
+            line-height: 46px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import 'config/mixins';
+@import 'config/vars';
+
+.body-vdovin {
+    background: $vdovinGradientColor;
+
+    .bordered {
+        border-image: $vdovinBorderGradientColor;
+        border-left: $vdovinBorderSettings;
+        border-right: $vdovinBorderSettings;
+    }
+
+    .vdovin {
+        &__text {
+            @include mistoFont(64px);
+            color: $blackColor;
+
+            @media (min-width:360px) and (max-width:575px) {
+                font-size: 20px;
+            }
+
+            @media (min-width:576px) and (max-width:767px) {
+                font-size: 24px;
+            }
+
+            @media (min-width:768px) and (max-width:991px) {
+                font-size: 28px;
+            }
+
+            @media (min-width:992px) and (max-width:1199px) {
+                font-size: 32px;
+            }
+
+            @media (min-width:1200px) and (max-width:1399px) {
+                font-size: 46px;
+            }
+        }
+    }
+
+    .dots {
+        gap: 64px;
+    }
+}
