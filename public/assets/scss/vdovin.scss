@@ -1,0 +1,87 @@
+@import 'config/mixins';
+@import 'config/vars';
+
+.body-vdovin {
+    background: $vdovinGradientColor;
+
+    .d {
+        &-500 {
+            animation-delay: 500ms;
+        }
+
+        &-1000 {
+            animation-delay: 1s;
+        }
+
+        &-1500 {
+            animation-delay: 1.5s;
+        }
+
+        &-2000 {
+            animation-delay: 2s;
+        }
+    }
+
+    .bordered {
+        border-image: $vdovinBorderGradientColor;
+        border-left: $vdovinBorderSettings;
+        border-right: $vdovinBorderSettings;
+    }
+
+    .vdovin {
+        &__text {
+            @include mistoFont(64px);
+            color: $blackColor;
+
+            @media (min-width:360px) and (max-width:575px) {
+                font-size: 28px;
+            }
+
+            @media (min-width:576px) and (max-width:991px) {
+                font-size: 32px;
+            }
+
+            @media (min-width:992px) and (max-width:1199px) {
+                font-size: 36px;
+            }
+
+            @media (min-width:1200px) and (max-width:1399px) {
+                font-size: 46px;
+            }
+        }
+    }
+
+    .dots {
+        gap: 64px;
+
+        @media (min-width:360px) and (max-width:575px) {
+            gap: 32px;
+        }
+
+        @media (min-width:576px) and (max-width:991px) {
+            gap: 32px;
+        }
+
+        @media (min-width:992px) and (max-width:1199px) {
+            gap: 64px;
+        }
+
+        @media (min-width:1200px) and (max-width:1399px) {
+            gap: 64px;
+        }
+
+        &__img {
+            @media (min-width:360px) and (max-width:991px) {
+                width: 16px;
+            }
+
+            @media (min-width:992px) and (max-width:1199px) {
+                width: 20px;
+            }
+
+            @media (min-width:1200px) and (max-width:1399px) {
+                width: 30px;
+            }
+        }
+    }
+}

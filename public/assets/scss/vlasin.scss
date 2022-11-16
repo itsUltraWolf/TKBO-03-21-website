@@ -1,0 +1,79 @@
+@import 'config/mixins';
+@import 'config/vars';
+
+body {
+    .vlasin-art {
+        &__bg {
+            height: 500px;
+            background: url("vlasin/svg/background-text.svg") no-repeat;
+            background-position: left;
+            background-size: contain;
+        }
+
+        &__title {
+            @include architecturalFont(128px);
+            line-height: 120px;
+            color: $blackColor;
+
+            @media (min-width: 360px) and (max-width: 575px) {
+                line-height: 46px;
+                font-size: 46px;
+            }
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                line-height: 68px;
+                font-size: 68px;
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                line-height: 96px;
+                font-size: 96px;
+            }
+        }
+    }
+
+    .wave-bg {
+        background: url("vlasin/svg/background.svg") no-repeat;
+        background-size: cover;
+    }
+
+    .arts {
+        &__number {
+            @include architecturalFont(250px);
+            line-height: 250px;
+            color: $blackColor;
+            margin: 0;
+
+            animation-delay: 1s;
+
+            @media (min-width: 360px) and (max-width: 575px) {
+                line-height: 64px;
+                font-size: 64px;
+            }
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                line-height: 112px;
+                font-size: 112px;
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                line-height: 124px;
+                font-size: 124px;
+            }
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                line-height: 152px;
+                font-size: 152px;
+            }
+        }
+
+        &__hr {
+            color: $blackColor;
+            opacity: 1;
+            border-top: 2px solid $blackColor;
+            margin: 0;
+
+            animation-delay: 500ms;
+        }
+    }
+}

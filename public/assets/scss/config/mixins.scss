@@ -1,0 +1,75 @@
+@mixin izisOneFont($fs) {
+    font-family: $izisOneFont;
+    font-size: $fs;
+}
+
+@mixin corbelFont($fs) {
+    font-family: $corbelFont;
+    font-size: $fs;
+}
+
+@mixin rezaZulmiFont($fs) {
+    font-family: $rezaZulmiFont;
+    font-size: $fs;
+}
+
+@mixin bookmanOldStyleFont($fs) {
+    font-family: $bookmanOldStyleFont;
+    font-size: $fs;
+}
+
+@mixin usuallyFont($fs) {
+    font-family: $usuallyFont;
+    font-size: $fs;
+}
+
+@mixin bewareFont($fs) {
+    font-family: $bewareFont;
+    font-size: $fs;
+}
+
+@mixin quicksandFont($fs) {
+    font-family: $quicksandFont;
+    font-size: $fs;
+}
+
+@mixin santaCatarinaFont($fs) {
+    font-family: $santaCatarinaFont;
+    letter-spacing: 6px;
+    font-size: $fs;
+}
+
+@mixin pobedaFont($fs) {
+    font-family: $pobedaFont;
+    font-size: $fs;
+}
+
+@mixin mr_ApexMk3Font($fs) {
+    font-family: $mr_ApexMk3Font;
+    font-size: $fs;
+}
+
+@mixin republicaMinorFont($fs) {
+    font-family: $republicaMinorFont;
+    font-size: $fs;
+}
+
+@mixin architecturalFont($fs) {
+    font-family: $architecturalFont;
+    font-size: $fs;
+}
+
+@mixin mistoFont($fs) {
+    font-family: $mistoFont;
+    font-size: $fs;
+}
+
+@mixin centuryGothicFont($fs) {
+    font-family: $centuryGothicFont;
+    font-size: $fs;
+}
+
+@mixin igletsFont($fs) {
+    font-family: $igletsFont;
+    font-size: $fs;
+}

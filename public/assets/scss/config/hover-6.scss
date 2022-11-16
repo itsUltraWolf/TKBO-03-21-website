@@ -1,0 +1,52 @@
+@import 'vars';
+
+.hover-image-6 {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+
+    a {
+        vertical-align: middle;
+
+        &::before {
+            transition: all 0.5s ease;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $indexContainerBgColor;
+            transform: scale(0);
+        }
+
+        &:hover {
+            &::before {
+                opacity: 0.9;
+                transform: scale(1);
+            }
+
+            &::after {
+                opacity: 0.35;
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.hover-image-6 img+img,
+.hover-image-6 img+p {
+    display: block;
+    position: absolute;
+    width: 90%;
+    transition: transform 0.7s ease 0s;
+    transform: scale(0);
+    color: $indexBlackColor;
+    z-index: 1;
+}
+
+.hover-image-6 a:hover img+img,
+.hover-image-6 a:hover img+p {
+    transform: scale(1);
+    opacity: 1;
+}
