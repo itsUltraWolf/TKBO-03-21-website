@@ -2,6 +2,40 @@
 @import 'config/vars';
 
 body {
+    .back-to-index {
+        @include rezaZulmiFont(20px);
+        color: $blackColor;
+        text-decoration: none;
+        border: 1px solid $blackColor;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: $blackColor;
+            color: $whiteColor;
+            transition-duration: 300ms;
+        }
+
+        @media (min-width: 360px) and (max-width: 575px) {
+            font-size: 12px;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            font-size: 14px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            font-size: 20px;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            font-size: 20px;
+        }
+    }
+
     .vlasin-art {
         &__bg {
             height: 500px;
